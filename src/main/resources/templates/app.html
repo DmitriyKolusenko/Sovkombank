@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header class="jss1">
+        <div class="jss3">
+            <a>
+                <img alt="logo" src="/images/logo.svg">
+            </a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="multicontainer">
+            <div class="text_block">
+                <h1 class="text_block_head">
+                    Отменяем проценты
+                    <br>
+                    по кредиту наличными!
+                </h1>
+            </div>
+            <div class="banner_btn">
+                <button id="logout_btn" class="btn disabled">
+                    <span class="span_btn">Выйти</span>
+                    <span class="span_btn_root"></span>
+                </button>
+            </div>
+            <div id="inputDialog" class="inputDialog">
+                <form id="credentialsForm" action="javascript:void(0);" method="post" enctype="multipart/form-data">
+                    <div><input id="username"name="username" class="input" type="text">Логин</div>
+                    <div><input id="password" name="password" class="input" type="password">Пароль</div>
+                    <div><input id="loginSubmit" type="submit" class="btn" value="Войти"></div>
+                </form>
+            </div>
+            <div id="inputNumbersForm" class="inputDialog disabled">
+                <div id="container_for_phones" class="container"></div>
+                <form id="input_numbers_block" class="input_numbers_block">
+                    <div><input id="phone" class="input" type="text">Телефон</div>
+                    <div><input id="message" class="input" type="text">Текст приглашения</div>
+                    <div><input id="add_phone" class="btn" value="Добавить номер"></div>
+                </form>
+                <div class="banner_btn">
+                    <button id="invite_numbers" class="btn">
+                        <span class="span_btn">Пригласить</span>
+                        <span class="span_btn_root"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/app.js" type="text/javascript" charset="utf-8"></script>
+<link href="/js/styles/app.css" rel="stylesheet">
+</html>
