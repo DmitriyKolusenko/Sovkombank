@@ -21,9 +21,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     UserDetailServiceImpl userDetailsService;
 
-    @Autowired
-    private CustomAccessDeniedHandler accessDeniedHandler;
-
     @Override
     public void configure(WebSecurity web) throws Exception {
 
@@ -38,7 +35,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .and().authorizeRequests().antMatchers("/sendInvite").authenticated()
             .and().formLogin().loginPage("/app").loginProcessingUrl("/loginAction").successForwardUrl("/token").permitAll()
             .and().logout()
-//            .and().exceptionHandling().accessDeniedHandler(accessDeniedHandler)
             .and().httpBasic()
             .and().csrf().disable();
     }
